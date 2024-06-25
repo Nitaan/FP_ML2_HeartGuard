@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#f4f4f4">
+
+    <!-- Logo HeartGuard -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/healthy_4811032"
+        android:contentDescription="@string/logo_description"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_heartguard"
+        android:fontFamily="@font/fredoka"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_description"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:fontFamily="@font/fredoka"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Enter Button -->
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_app"
+        android:fontFamily="@font/fredoka"
+        android:backgroundTint="@color/red"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

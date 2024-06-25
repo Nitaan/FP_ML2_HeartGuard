@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.nitamlII.heart_uasii.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.nitamlII.heart_uasii.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dataset"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_fitur"
+        android:name="com.nitamlII.heart_uasii.ui.fitur.FiturFragment"
+        android:label="@string/title_fitur"
+        tools:layout="@layout/fragment_fitur" />
+
+    <fragment
+        android:id="@+id/navigation_model"
+        android:name="com.nitamlII.heart_uasii.ui.model.ModelFragment"
+        android:label="@string/title_model"
+        tools:layout="@layout/fragment_model" />
+
+    <fragment
+        android:id="@+id/navigation_simulasi"
+        android:name="com.nitamlII.heart_uasii.ui.simulasi.SimulasiFragment"
+        android:label="@string/title_sim"
+        tools:layout="@layout/fragment_simulasi" />
+
+</navigation>

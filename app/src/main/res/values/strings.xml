@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">HeartGuard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dataset">Dataset</string>
+    <string name="title_fitur">Fitur</string>
+    <string name="title_model">Model</string>
+    <string name="title_sim">Simulasi</string>
+    <string name="model">Arsitektur Model</string>
+    <string name="age">Berapa usia Anda?</string>
+    <string name="gender">Apa jenis kelamin Anda?</string>
+    <string name="cholesterol">Berapa kadar kolesterol Anda?</string>
+    <string name="answer">Jawaban</string>
+    <string name="bp">Berapa tekanan darah sistolik Anda dalam mmHg?</string>
+    <string name="hr">Berapa detak jantung Anda dalam hitungan denyut per menit?</string>
+    <string name="smoking">Apakah Anda Merokok?</string>
+    <string name="alc">Seberapa sering Anda mengonsumsi alkohol?</string>
+    <string name="he">Berapa jam Anda berolahraga per minggu?</string>
+    <string name="fam">Adakah anggota keluarga yang memiliki riwayat penyakit jantung?</string>
+    <string name="diabetes">Apakah Anda memiliki diabetes?</string>
+    <string name="obesity">Apakah Anda memiliki mengalami obesitas?</string>
+    <string name="sl">Berapa tingkat stres Anda pada skala 1 sampai 10?</string>
+    <string name="slider_desc">Slider for stress level</string>
+    <string name="bs">Berapa tingkat gula darah puasa Anda dalam mg/dL?</string>
+    <string name="eia">Apakah Anda mengalami nyeri dada akibat olahraga?</string>
+    <string name="cpt">Apa Jenis nyeri dada yang dialami?</string>
+    <string name="dscdata">Dataset ini berisi 1000 baris dan 16 kolom yang memuat informasi terkait individu dan faktor risiko penyakit jantung. Data tersebut mencakup informasi demografis seperti usia dan jenis kelamin, riwayat kesehatan, faktor gaya hidup, dan gejala yang berhubungan dengan penyakit jantung. Variabel target menunjukkan apakah seseorang terdiagnosis memiliki penyakit jantung atau tidak.</string>
+    <string name="dataset">Prediksi Penyakit Jantung</string>
+    <string name="shape">Dataset ini berisi 1000 baris dan 16 kolom</string>
+    <string name="dscmodel">Model ini memiliki lapisan input untuk 15 fitur. Layer Dense pertama model ini memiliki 128 neuron dan diikuti oleh layer dropout dengan rasio 0.5, lalu ada layer dense dengan masing-masing 64 dan 32 neuron dengan fungsi aktivasi ReLu, dan layer dense terakhir dengan satu neuron dan fungsi aktivasi sigmoid. Optimasi menggunakan RMSprop (learning rate 0.001, weight decay 0.004), dikompilasi dengan binary_crossentropy dan metrik akurasi. Akurasi model sebesar 89% .</string>
+    <string name="welcome_to_heartguard">Selamat Datang di HeartGuard</string>
+    <string name="intro_description">Aplikasi untuk memprediksi kemungkinan anda memiliki penyakit jantung atau tidak.</string>
+    <string name="enter_app">Mulai Aplikasi</string>
+    <string name="logo_description">HeartGuard Logo</string>
+    <string name="descdataset">Berdasarkan grafik diatas: </string>
+
+    <string-array name="data_fitur">
+        <item>Age (int64)</item>
+        <item>Gender (object)</item>
+        <item>Cholesterol (int64)</item>
+        <item>Blood Pressure (int64)</item>
+        <item>Heart Rate (int64)</item>
+        <item>Smoking (object)</item>
+        <item>Alcohol Intake (object)</item>
+        <item>Exercise Hours (int64)</item>
+        <item>Family History (object)</item>
+        <item>Diabetes (object)</item>
+        <item>Obesity (object)</item>
+        <item>Stress Level (int64)</item>
+        <item>Blood Sugar (int64)</item>
+        <item>Exercise Induced Angina (object)</item>
+        <item>Chest Pain Type (object)</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Age of the individual (years)</item>
+        <item>Gender of the individual (Male/Female)</item>
+        <item>Cholesterol level in mg/dL (range 150-349)</item>
+        <item>Systolic blood pressure in mmHg (range 90-179)</item>
+        <item>Heart rate in beats per minute (range 60-99)</item>
+        <item>Smoking status (Never/Former/Current)</item>
+        <item>Alcohol intake frequency (None/Moderate/Heavy)</item>
+        <item>Hours of exercise per week (range 0-9)</item>
+        <item>Family history of heart disease (Yes/No)</item>
+        <item>Diabetes status (Yes/No)</item>
+        <item>Obesity status (Yes/No)</item>
+        <item>Stress level (range 1-10)</item>
+        <item>Fasting blood sugar level in mg/dL (range 70-199)</item>
+        <item>Presence of exercise-induced angina (Yes/No)</item>
+        <item>Type of chest pain experienced (Typical Angina/Atypical Angina/Non-anginal Pain/Asymptomatic)</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/ic_age</item>
+        <item>@drawable/ice_gender</item>
+        <item>@drawable/ic_chol</item>
+        <item>@drawable/ic_bp</item>
+        <item>@drawable/ic_hr</item>
+        <item>@drawable/ic_smoking</item>
+        <item>@drawable/ic_alc</item>
+        <item>@drawable/ic_exercise</item>
+        <item>@drawable/ic_fm</item>
+        <item>@drawable/ic_diab</item>
+        <item>@drawable/ic_obesity</item>
+        <item>@drawable/ic_sl</item>
+        <item>@drawable/ic_bs</item>
+        <item>@drawable/ic_angina</item>
+        <item>@drawable/ic_cp</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">Aplikasi ini dirancang untuk membantu pengguna dalam memprediksi kemungkinan penyakit jantung berdasarkan data kesehatan mereka. Dengan menggunakan algoritma pembelajaran mesin Artificial Neural Network (ANN), aplikasi ini diharapkan dapat memberikan analisis yang akurat dan dapat diandalkan untuk membantu dalam pengambilan keputusan kesehatan yang lebih baik.</string>
+    <string name="sumber">Sumber Dataset</string>
+    <string name="descdata">Dataset yang digunakan dalam aplikasi ini berasal dari Kaggle yang dibuat oleh akun dengan username rashadrmammadov.</string>
+    <string name="apktujuan">Tujuan Aplikasi</string>
+    <string name="tujuan">Tujuan dari aplikasi ini adalah untuk membantu pengguna dalam memprediksi kemungkinan penyakit jantung berdasarkan data kesehatan mereka.</string>
+    <string name="cara">Cara Menggunakan Aplikasi</string>
+    <string name="step">1. Masukkan data kesehatan Anda pada form yang tersedia.\n2. Tekan tombol \'Prediksi\' untuk melihat hasil prediksi.\n3. Aplikasi akan menampilkan hasil prediksi apakah Anda berisiko penyakit jantung atau tidak.\n4. Berdasarkan hasil prediksi, pertimbangkan untuk berkonsultasi dengan profesional kesehatan untuk evaluasi lebih lanjut.</string>
+    <string name="_1_risiko_penyakit_jantung_lebih_tinggi_pada_pria">1. Risiko penyakit jantung lebih tinggi pada pria.</string>
+    <string name="_2_tingkat_penyakit_jantung_lebih_tinggi_pada_non_perokok_sedangkan_yang_terendah_pada_mantan_perokok">2. Tingkat penyakit jantung lebih tinggi pada non-perokok, sedangkan yang terendah pada mantan perokok.</string>
+    <string name="_3_orang_dengan_riwayat_keluarga_penyakit_jantung_memiliki_risiko_lebih_besar_untuk_terserang_penyakit_tersebut">3. Orang dengan riwayat keluarga penyakit jantung memiliki risiko lebih besar untuk terserang penyakit tersebut.</string>
+    <string name="_4_penderita_diabetes_memiliki_risiko_lebih_tinggi_untuk_mengalami_penyakit_jantung">4. Penderita diabetes memiliki risiko lebih tinggi untuk mengalami penyakit jantung.</string>
+</resources>
